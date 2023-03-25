@@ -30,3 +30,8 @@ variable "tags" {
   description = "AWS tags that will be applied to all resources"
   default     = {}
 }
+
+# variable "kubernetes_event_exporter_version" {
+#   type = "string"
+#   version = ""
+# }

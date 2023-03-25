@@ -560,3 +560,18 @@ module "descheduler" {
     }], local.system_component_values)
   }
 }
+
+module "kubernetes_event_exporter" {
+
+  source = "../addons/kubernetes-event-exporter"
+
+  addon_context = local.addon_context
+
+
+    # set = concat([{
+    #   name  = "config.logFormat"
+    #   value = "json"
+    #   type  = "string"
+    #   }],
+    # [])
+  }
